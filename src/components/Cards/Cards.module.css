@@ -1,0 +1,13 @@
+.listItem {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+  justify-items: center;
+  margin: 0 auto;
+  width: 90%;
+  padding-top: 30px;
+  background: transparent;     
+}
+  

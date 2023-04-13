@@ -1,0 +1,49 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100vh;
+  
+}
+
+.details{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: #44fb08;
+  border-radius: 10px;
+  border-style: double;
+  width: 500px;
+  height: auto;
+  margin: 20px 10px 30px 100px;  
+  font-size: 22px;
+  font-family: 'Get Schwifty';
+  text-shadow: 0 0 5px #44fb08, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #141314, 0 0 25px #ff00de;
+  -webkit-text-fill-color: #0e0f0e;
+  -webkit-text-stroke-color: #3d1441;
+  -webkit-text-stroke-width:0.5px; 
+  letter-spacing: 2px;  
+}
+
+.cardImg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+  height: 100vh;
+  margin: 20px 5px;
+  align-items: center;  
+  background-image:url('C:\Users\Windows\Desktop\SOYHENRY DOCS\ProyectoRyM\rick_and_morty\src\assets\img\portal.png');
+  background-size: cover;
+  background-position: center;    
+}
+
+.img {
+    width: 300px;
+    height: 300px; 
+    border-color: #44fb08;
+    border-style: double;   
+    border-radius: 150px;  
+    align-self: center;
+    opacity: 90%;
+  }

@@ -1,0 +1,18 @@
+.div{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  background-color: transparent;
+  padding: 10px 10px;
+  font-family: 'Get Schwifty';
+  color:black ;
+  text-shadow: 0 0 5px #44fb08;
+  font-size: 20px; 
+}
+
+.img{
+   border-radius: 100%;
+   width: 200px;
+   border: double blueviolet 4px;
+}

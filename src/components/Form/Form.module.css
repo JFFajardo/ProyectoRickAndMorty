@@ -1,0 +1,85 @@
+
+ 
+.container{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  background-color: transparent;
+  padding: 70px 100px;
+  font-family: 'Get Schwifty';
+  color:black ;
+  text-shadow: 0 0 5px #44fb08;
+  font-size: 24px;  
+} 
+
+.input_container{
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.input_container label{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	font-size: 26px;	 
+    pointer-events: none;  
+	transition: all 0.5s ease-in-out;
+    font-family: 'Get Schwifty';   
+}
+
+.input_container input{ 
+  border:0;
+  border-bottom: 2px solid #3d1441;  
+  background: transparent;
+  width: 100%;
+  padding: 10px 0 5px 0;
+  font-size: 26px;
+  font-family: 'Get Schwifty'; 
+  color:black ;
+  text-shadow: 0 0 5px #44fb08;
+}
+.input_container input:focus{ 
+ border:none;	
+ outline:none;
+ border-bottom:2px solid #44fb08;	
+}
+
+/* .input_complete{ 
+    background-color: #3508fb;
+    border-bottom:2px solid #44fb08;	
+}
+.input_errors{ 
+    background-color: red;
+    border-bottom:2px solid red;	
+} */
+
+.input_container input:focus ~ label,
+.input_container input:valid ~ label{
+	top:-10px;
+	font-size: 20px;	
+}
+
+.button{
+    background-color: rgb(61, 20, 65);
+    font-size: 24px;
+    font-family: 'Get Schwifty';
+    color: white;
+    border-radius: 10px;     
+    margin: 10px; 
+    border-color: #44fb08;
+    border-style: double; 
+}
+
+.button:hover{
+    background-color: blueviolet;
+    color: aqua
+}
+
+.img{
+    border-radius: 5%;
+    width: fit-content;
+    border: double blueviolet 4px;
+    margin: 5px;
+    opacity: 70%;
+ }

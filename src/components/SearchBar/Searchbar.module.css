@@ -1,0 +1,36 @@
+.divSearch{
+    display: flex;
+    width:fit-content;
+    background: transparent;    
+}
+
+.input{
+    display: flex;
+    color: #3d1441;
+    background: linear-gradient(30deg, #44fb08, #3d1441);
+    font-family: 'Get Schwifty';
+    font-size: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    border-color: #44fb08;
+    border-style: double;
+}
+
+.input::placeholder{
+    color: #3d1441;
+}
+.button{
+    background-color: #3d1441;
+    font-size: 22px;
+    font-family: 'Get Schwifty';
+    border-radius: 10px;
+    color: white;  
+    margin: 10px; 
+    border-color: #44fb08;
+    border-style: double; 
+}
+
+.button:hover{
+    background-color: blueviolet;
+    color: aqua
+}

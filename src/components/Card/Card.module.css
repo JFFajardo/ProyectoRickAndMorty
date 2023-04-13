@@ -1,0 +1,83 @@
+.container{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    width: 250px;
+    height: fit-content;
+    margin: 5px;
+    border: double #44fb08 4px;
+    border-radius: 5%;
+  }
+
+  .container:hover{
+    background: linear-gradient(45deg, #3d1441, #e71accb3);
+    opacity: 90%;
+  }
+
+  .div{
+    display: flex;
+    justify-content: space-around;
+}
+.button{
+  background-color: transparent;
+  border-color: #44fb08;
+  color:white;
+  border-radius: 25px;
+  width: 50px;
+  height: 50px;    
+  margin: 10px;
+  font-family: 'Get Schwifty'; 
+  font-size: 24px;
+}
+
+.button:hover{
+  background: linear-gradient(45deg, blueviolet, #44fb08);
+  border-color: white;
+}
+
+.button_fav{
+  background-color: transparent;
+    border-color: #44fb08;
+    color: white;
+    border-radius: 25px;
+    width: 50px;
+    height: 50px;    
+    margin: 10px;
+    font-family: 'Get Schwifty'; 
+    font-size: 24px;
+}
+
+.button_fav:hover{
+  background: linear-gradient(45deg, blueviolet, #44fb08);
+  border-color: white;  
+}
+
+.cardImg {
+    display: flex;
+    width: 80%;
+    border-radius: 20px;
+    border-color: blueviolet;
+    border-style: double;   
+    margin: 10px ;
+    align-self: center;
+}
+
+.navLink{
+    font-size: 20px;
+    font-family: 'Get Schwifty';
+    letter-spacing: 1px;
+    text-shadow: 0 0 5px  #44fb08, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #141314, 0 0 25px #ff00de;
+    -webkit-text-fill-color: #0e0f0e;
+    -webkit-text-stroke-color: #3d1441;
+  -webkit-text-stroke-width:0.2px; 
+    margin: 2px;
+    border-radius: 10px;
+    text-decoration: none;
+    width: max-content;
+    align-self: center;
+}
+
+.navLink:hover{
+  background: linear-gradient(45deg, #5a014e, #44fb08);   
+}
+

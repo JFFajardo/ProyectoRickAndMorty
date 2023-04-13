@@ -1,0 +1,40 @@
+.listItem {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+  justify-items: center;
+  margin-top: 50px;
+  width: 90%;
+  padding-top: 30px;
+  background: transparent;     
+}
+
+.box{
+  display: flex;
+  justify-content: space-around;
+  margin: 30px;
+}
+
+.box select {
+  background: linear-gradient(30deg, #44fb08, #3d1441);
+  color: #3d1441;
+  font-family: 'Get Schwifty';
+  font-size: 22px;
+  padding: 8px;
+  width: 250px;
+  border-radius: 10px;
+  border-color: #44fb08;
+  border-style: double;  
+  -webkit-appearance: button;
+  appearance: button;
+  outline: none;
+}
+
+.box select:hover,
+.box select:focus {
+    color: #44fb08;
+    background: #3d1441;
+}
+
