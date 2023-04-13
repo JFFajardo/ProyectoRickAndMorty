@@ -23,21 +23,8 @@
     border-color: #44fb08;
     border-style: double;
 }
+
 .button:hover{
     background-color: blueviolet;
     color: aqua
 }
-/* .navLink{
-    background-color: rgb(61, 20, 65);
-    font-size: 22px;
-    font-family: 'Get Schwifty';
-    border-radius: 10px;
-    color: white;   
-    margin: 10px; 
-    text-decoration: none;
-}
-
-.navLink:hover{
-    background-color: blueviolet;
-    color: aqua
-} */

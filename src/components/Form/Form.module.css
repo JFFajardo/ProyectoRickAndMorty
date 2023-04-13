@@ -38,6 +38,7 @@
   font-family: 'Get Schwifty'; 
   color:black ;
   text-shadow: 0 0 5px #44fb08;
+  caret-color: #44fb08;
 }
 .input_container input:focus{ 
  border:none;	
@@ -45,14 +46,11 @@
  border-bottom:2px solid #44fb08;	
 }
 
-/* .input_complete{ 
-    background-color: #3508fb;
-    border-bottom:2px solid #44fb08;	
-}
+
 .input_errors{ 
     background-color: red;
     border-bottom:2px solid red;	
-} */
+}
 
 .input_container input:focus ~ label,
 .input_container input:valid ~ label{

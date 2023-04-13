@@ -24,8 +24,8 @@ function App() {
    const navigate = useNavigate();
    const {pathname} = useLocation();
    const [access, setAccess] = useState(false);
-   const email = 'billyberto@gmail.com';
-   const password = 'gatoloco89';
+   const email = 'billy@gmail.com';
+   const password = 'gato123';
 
    const login = (userData) => {
       if (userData.password === password && userData.email === email) {
@@ -35,8 +35,14 @@ function App() {
    }     
 
    useEffect(() => {
-      !access && navigate('/')
-   }, [access, navigate]);
+      (!access && 
+      (pathname === '/home' || pathname === '/favorites' || pathname === '/about') &&
+       navigate('/'))
+
+       return () => {
+         pathname === '/' && setCharacters([])
+       }
+   }, [access, navigate, pathname]);
 
    function onSearch(id) {
       for (const character of characters){

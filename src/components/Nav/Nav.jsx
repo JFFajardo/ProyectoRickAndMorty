@@ -1,7 +1,8 @@
 import SearchBar from "../SearchBar/SearchBar.jsx";
 import styles from './Nav.module.css';
 // import { useState } from 'react';
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+
 
 export default function Nav({onSearch, setAccess}, ) {
 
@@ -17,7 +18,7 @@ export default function Nav({onSearch, setAccess}, ) {
           </NavLink>
           <NavLink to='/favorites'>     
             <button className={styles.button}>Favorites</button>
-          </NavLink>
+          </NavLink>          
       </div>
 
         <div className={styles.div}>
@@ -31,8 +32,7 @@ export default function Nav({onSearch, setAccess}, ) {
         <button className={styles.button}>About</button>
       </NavLink>  
       <button className={styles.button} onClick={handleLogOut}>LOGOUT</button>  
-        </div>
-         
+        </div>         
     </nav>     
   );
 }
