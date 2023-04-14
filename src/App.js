@@ -12,6 +12,7 @@ import Favorites from './components/Favorites/Favorites.jsx';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import {Routes, Route, useLocation, useNavigate} from 'react-router-dom';
+import Start from './components/Start/Start';
 
 
 const URL_BASE = 'https://be-a-rym.up.railway.app/api/character'
@@ -30,17 +31,21 @@ function App() {
    const login = (userData) => {
       if (userData.password === password && userData.email === email) {
          setAccess(true);
-         navigate('/home');
+         navigate('/start/home');
       }
    }     
+   const detail = (pathname) =>{
+      const arrPathname = pathname.split('/')
+      return arrPathname.includes('detail')
+   }
 
    useEffect(() => {
       (!access && 
-      (pathname === '/home' || pathname === '/favorites' || pathname === '/about') &&
-       navigate('/'))
+      (pathname === '/start/home' || pathname === '/favorites' || pathname === '/start/about' || detail(pathname)) &&
+       navigate('/start'))
 
        return () => {
-         pathname === '/' && setCharacters([])
+         pathname === '/start' && setCharacters([])
        }
    }, [access, navigate, pathname]);
 
@@ -61,13 +66,15 @@ function App() {
 
    return (        
       <div className='App'>
-         {pathname !== '/' && <Nav onSearch={onSearch} setAccess={setAccess}/>}
+         {(pathname === '/start/home' ||  pathname === '/start/about' || pathname === '/favorites' || detail(pathname)) && <Nav onSearch={onSearch} setAccess={setAccess}/>}
          {/* <SearchBar onSearch={(characterID) => window.alert(characterID)} /> */}
          <Routes>            
-            <Route path='/home' element={<Cards onClose={onClose}characters={characters}/>}/>
-            <Route path='/about' element={<About/>}/>
+            <Route path='/start/home' element={<Cards onClose={onClose}characters={characters}/>}/>
+            <Route path='/start/about' element={<About/>}/>
             <Route path='detail/:id' element={<Detail/>}/>
-            <Route path='/' element={<Form login={login}/>} />
+            <Route exact path="/" element={<Start/>} />
+            <Route path='/start' element={<Start/>}/>
+            <Route path='/start/login' element={<Form login={login}/>} />
             <Route path='*' element={<Error/>}/> 
             <Route path='/favorites' element={<Favorites/>}/>
          </Routes>

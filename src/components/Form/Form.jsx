@@ -38,6 +38,7 @@ export default function Form ({login}){
                     type='email' 
                     value={userData.email} 
                     onChange={handleChange}/>
+                       
                     <label htmlFor='email'> Email: </label> 
                     <p>{errors.email}</p>                    
                 </div>
@@ -46,7 +47,7 @@ export default function Form ({login}){
                     name='password' 
                     type= 'password'  
                     value={userData.password} 
-                    onChange={handleChange}/>
+                    onChange={handleChange}/>                    
                     <label htmlFor='password'> Password: </label>
                     <p>{errors.password}</p>
                 </div>

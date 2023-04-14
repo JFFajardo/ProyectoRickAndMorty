@@ -4,8 +4,6 @@ import { addFav, removeFav } from '../../redux/actions';
 import { connect } from 'react-redux';
 import { useState, useEffect} from 'react';
 
-
-
 const Card = (props) => {
    
    const [isFav, setIsFav] = useState (false);

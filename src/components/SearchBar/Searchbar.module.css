@@ -2,7 +2,8 @@
     display: flex;
     width:fit-content;
     flex-direction: column;
-    background: transparent;    
+    background: transparent;  
+    align-content: center;  
 }
 
 .input{
@@ -22,6 +23,7 @@
     color: #3d1441;
 }
 .button{
+    width: 150px;
     background-color: #3d1441;
     font-size: 22px;
     font-family: 'Get Schwifty';
