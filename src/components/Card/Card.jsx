@@ -29,22 +29,18 @@ const Card = (props) => {
    }, [props.myFavorites, props.id]);
    
    return (
-      <div className={styles.container}>
-         <div  className={styles.div}>
+      <div className= {styles.container}>
+         <div className={styles.div}>
             <button className={styles.button_fav} onClick={handleFavorite}>{isFav ? '❤️' : '🤍'} </button>
             <p className={styles.navLink}>{props.id}</p>
             <button className={styles.button} onClick= {() => {props.onClose(props.id)}}>X</button>
-            
          </div>
          <div className={styles.div}>
-         <NavLink className={styles.navLink} to={`/detail/${props.id}`}>
+            <NavLink className={styles.navLink} to={`/detail/${props.id}`}>
             <p>Name: {props.name}</p>
-            
             </NavLink>
          </div>
-         
-                 <img className={styles.cardImg} src={props.image} alt=''/>
-         
+         <img className={styles.cardImg} src={props.image} alt=''/>
       </div>
    );
 }

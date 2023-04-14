@@ -4,8 +4,7 @@
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    background-color: transparent;  
-    /* background: linear-gradient(60deg, blueviolet, pink);     */
+    background-color: transparent;
 }
 
 .div{
@@ -14,10 +13,12 @@
 }
 
 .button{
-    background-color: rgb(61, 20, 65);
-    font-size: 22px;
+    background-color: #3d1441;
+    font-size: 24px;
     font-family: 'Get Schwifty';
-    color: white;
+    color: white ;
+    text-shadow: 0 0 10px #44fb08;
+    
     border-radius: 10px;     
     margin: 10px;
     border-color: #44fb08;
@@ -26,5 +27,6 @@
 
 .button:hover{
     background-color: blueviolet;
-    color: aqua
+    color: aqua;
+    text-shadow: 0 0 5px #191a19;
 }

@@ -1,6 +1,7 @@
 .divSearch{
     display: flex;
     width:fit-content;
+    flex-direction: column;
     background: transparent;    
 }
 
@@ -14,6 +15,7 @@
     border-radius: 10px;
     border-color: #44fb08;
     border-style: double;
+    caret-color: #3d1441;
 }
 
 .input::placeholder{
@@ -24,7 +26,8 @@
     font-size: 22px;
     font-family: 'Get Schwifty';
     border-radius: 10px;
-    color: white;  
+    color: white;
+    text-shadow: 0 0 10px #44fb08;
     margin: 10px; 
     border-color: #44fb08;
     border-style: double; 
