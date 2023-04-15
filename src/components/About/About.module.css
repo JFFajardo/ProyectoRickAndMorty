@@ -33,27 +33,27 @@
 
 .button_git{ 
   margin: 0 auto;
-  padding: 20px;
-  width: 50px;
-  height: 50px;
+  padding: 10px;
+  width: 60px;
+  height: 60px;
   border: 3px solid #3d1441;
-  border-radius: 50px;
+  border-radius: 60px;
   background-image: url('C:\Users\Windows\Desktop\SOYHENRY DOCS\ProyectoRyM\rick_and_morty\src\assets\img\github.png');
   background-size: cover;
   cursor: pointer;  
 }
 
 .button_git:hover{
-  border-color: #44fb08;
+  border-color: #44fb08;  
 }
 
 .button_link{ 
   margin: 0 auto;
-  padding: 20px;
-  width: 50px;
-  height: 50px;
+  padding: 10px;
+  width: 60px;
+  height: 60px;
   border: 3px solid #3d1441;
-  border-radius: 50px;
+  border-radius: 60px;
   background-image: url('C:\Users\Windows\Desktop\SOYHENRY DOCS\ProyectoRyM\rick_and_morty\src\assets\img\linkedin.jpg');
   background-size: cover;
   cursor: pointer;  
