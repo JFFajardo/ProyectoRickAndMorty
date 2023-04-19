@@ -15,8 +15,8 @@ import {Routes, Route, useLocation, useNavigate} from 'react-router-dom';
 import Start from './components/Start/Start';
 
 
-const URL_BASE = 'https://be-a-rym.up.railway.app/api/character'
-const API_KEY = 'adecaf1bb490.fef7146b957ae87523bb'
+const URL_BASE = 'http://localhost:3001/rickandmorty/character/'
+// const API_KEY = 'adecaf1bb490.fef7146b957ae87523bb'
 
 
 function App() {
@@ -53,7 +53,7 @@ function App() {
       for (const character of characters){
          if(character.id === parseInt(id)) return window.alert('¡Personaje ya agregado!');
       }
-      axios(`${URL_BASE}/${id}?key=${API_KEY}`).then(({ data }) => {
+      axios(`${URL_BASE}/${id}`).then(({ data }) => {
          if (data.name) {
             setCharacters((oldChars) => [...oldChars, data]);
          } else {window.alert('¡No hay personajes con este ID!')}
