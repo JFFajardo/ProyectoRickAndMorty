@@ -43,7 +43,7 @@
   left: 3%;
   top: 3%;
   border-radius: 3px;
-  background-image: url('C:\Users\Windows\Desktop\SOYHENRY DOCS\ProyectoRyM\rick_and_morty\src\assets\img\universe.jpg');
+  background-image: url('C:\Users\Windows\Desktop\SOYHENRY DOCS\ProyectoRyM\rick_and_morty\Client\src\assets\img\universe.jpg');
   background-size: cover;
   background-position: center;  
   color: #44fb08;
@@ -79,7 +79,7 @@
   align-content: center;
   justify-content: center;
   align-self: center;  
-  background-image: url('C:\Users\Windows\Desktop\SOYHENRY DOCS\ProyectoRyM\rick_and_morty\src\assets\img\portal.png');
+  background-image: url('C:\Users\Windows\Desktop\SOYHENRY DOCS\ProyectoRyM\rick_and_morty\Client\src\assets\img\portal.png');
   background-size: cover;
   background-position: center;
 }
