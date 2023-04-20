@@ -53,7 +53,8 @@ function App() {
       for (const character of characters){
          if(character.id === parseInt(id)) return window.alert('¡Personaje ya agregado!');
       }
-      axios(`${URL_BASE}/${id}`).then(({ data }) => {
+      axios(`${URL_BASE}/${id}`)
+         .then(({ data }) => {
          if (data.name) {
             setCharacters((oldChars) => [...oldChars, data]);
          } else {window.alert('¡No hay personajes con este ID!')}
