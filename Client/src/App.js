@@ -15,9 +15,10 @@ import {Routes, Route, useLocation, useNavigate} from 'react-router-dom';
 import Start from './components/Start/Start';
 
 
-const URL_BASE = 'http://localhost:3001/rickandmorty/character/'
+const URL_BASE = 'http://localhost:3001/rickandmorty/character'
 // const API_KEY = 'adecaf1bb490.fef7146b957ae87523bb'
 
+const URL = 'http://localhost:3001/rickandmorty/login';
 
 function App() {
 
@@ -25,15 +26,23 @@ function App() {
    const navigate = useNavigate();
    const {pathname} = useLocation();
    const [access, setAccess] = useState(false);
-   const email = 'billy@gmail.com';
-   const password = 'gato123';
+   // const email = 'billy@gmail.com';
+   // const password = 'gato123';
 
-   const login = (userData) => {
-      if (userData.password === password && userData.email === email) {
-         setAccess(true);
-         navigate('/start/home');
+   const login = async (userData) => {
+      try{
+         const { email, password } = userData;
+         const {data} = await axios(URL + `?email=${email}&password=${password}`)
+         const { access } = data;
+         setAccess(access);
+         access && navigate('/start/home');
+         !access && alert('No se encontró registro')
       }
-   }     
+      catch(error){
+         console.log('Error de Login');
+      }
+   }
+
    const detail = (pathname) =>{
       const arrPathname = pathname.split('/')
       return arrPathname.includes('detail')
@@ -49,19 +58,22 @@ function App() {
        }
    }, [access, navigate, pathname]);
 
-   function onSearch(id) {
+   const onSearch = async (id) => {
       for (const character of characters){
-         if(character.id === parseInt(id)) return window.alert('¡Personaje ya agregado!');
+         if(character.id === parseInt(id)) return alert('¡Personaje ya agregado!');
       }
-      axios(`${URL_BASE}/${id}`)
-         .then(({ data }) => {
-         if (data.name) {
+      try {
+         const {data} = await axios(`${URL_BASE}/${id}`)
+            if (data.name) {
             setCharacters((oldChars) => [...oldChars, data]);
-         } else {window.alert('¡No hay personajes con este ID!')}
-      }).catch(()=>window.alert('¡No hay personajes con este ID!'))
+         } 
+      }
+      catch(error){
+         alert('¡No hay personajes con este ID!')
+      }
    }
 
-   const onClose =(id) => {
+   const onClose = (id) => {
       setCharacters(characters.filter(character => (id)!== character.id))
    }
 
