@@ -3,10 +3,10 @@ const session = require('supertest');
 const request = session(app);
 
 const character = {
-    id: '999',
+    id: 999,
     name: 'Johan',
     status: 'Alive',
-    species: 'human',
+    species: 'Human',
     gender: 'Male',
     origin: {
         name: 'Earth (C-137)'
@@ -52,26 +52,26 @@ describe('test de RUTAS', () => {
 
     describe('POST /rickandmorty/fav', () => {
         it('Se debe guardar el personaje en favoritos', async () => {     
-            const response =  await request.postt('/rickandmorty/fav').send(character);            
+            const response =  await request.post('/rickandmorty/fav').send(character);            
             expect(response.body).toContainEqual(character);
         });
 
         it('Se debe agregar personajes en favoritos sin eliminar existentes', async () => {    
-            character.id = 1010
-            character.name = 'Billy' 
-            const response =  await request.postt('/rickandmorty/fav').send(character);            
+            character.id = 1010;
+            character.name = 'Billy';
+            const response =  await request.post('/rickandmorty/fav').send(character);            
             expect(response.body.length).toBe(2);
         });
     })
 
     describe('DELETE /rickandmorty/fav/:id', () => {
         it('Se ID solicitado no existe, retorna un arreglo con los favoritos', async () => {     
-            const response =  await request.delete('/rickandmorty/fav/2');            
+            const response =  await request.delete('/rickandmorty/fav/2sf5');            
             expect(response.body.length).toBe(2);
         });
 
         it('Se ID solicitado existe, eliminarlo de favoritos', async () => {     
-            const response =  await request.delete('/rickandmorty/fav/999');            
+            const response =  await request.delete('/rickandmorty/fav/1010');            
             expect(response.body.length).toBe(1);
         });
     });
