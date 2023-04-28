@@ -19,7 +19,7 @@ const Card = (props) => {
    }   
 
    useEffect(() => {
-      props.myFavorites.forEach((fav) => {
+      props.allCharacters.forEach((fav) => {
          if (fav.id === props.id) {
             setIsFav(true);
          }
@@ -45,7 +45,8 @@ const Card = (props) => {
 
 const mapStateToProps = (state) => {
    return {
-      myFavorites: state.myFavorites
+      myFavorites: state.myFavorites,
+      allCharacters: state.allCharacters
    }
 }
 
@@ -53,6 +54,7 @@ const mapDispatchToProps = (dispatch) => {
    return {
       addFav: (character) => {dispatch(addFav(character))},
       removeFav: (id) => {dispatch(removeFav(id))}
+
    }   
 }
 

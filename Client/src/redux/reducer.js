@@ -18,9 +18,15 @@ const reducer = (state = initialState, action) => {
         case REMOVE_FAV:
             
             return {
-                ...state,
-                myFavorites: action.payload
+                    ...state,
+                    myFavorites: state.gender === '' || state.gender === 'All'
+                    ? action.payload
+                    : action.payload.filter(fav => fav.gender === state.gender),
+                    allCharacters: action.payload,
+                    gender: ''
             }
+            
+
         case FILTER:
             if(action.payload === 'All'){
                 return {
@@ -30,7 +36,8 @@ const reducer = (state = initialState, action) => {
             }
             return {
                 ...state,
-                myFavorites: state.allCharacters.filter(character =>character.gender === action.payload)
+                myFavorites: state.allCharacters.filter(character =>character.gender === action.payload),
+                gender: action.payload
             }
          
         case ORDER:

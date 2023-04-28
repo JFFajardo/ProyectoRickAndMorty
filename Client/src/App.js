@@ -9,15 +9,14 @@ import Detail from './components/Detail/Detail.jsx';
 import Error from './components/Error/Error.jsx';
 import Form from './components/Form/Form.jsx';
 import Favorites from './components/Favorites/Favorites.jsx';
+import Start from './components/Start/Start';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import {Routes, Route, useLocation, useNavigate} from 'react-router-dom';
-import Start from './components/Start/Start';
 
 
 const URL_BASE = 'http://localhost:3001/rickandmorty/character'
 // const API_KEY = 'adecaf1bb490.fef7146b957ae87523bb'
-
 const URL = 'http://localhost:3001/rickandmorty/login';
 
 function App() {

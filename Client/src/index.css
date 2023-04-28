@@ -1,17 +1,32 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
   background-image: url('C:\Users\Windows\Desktop\SOYHENRY DOCS\ProyectoRyM\rick_and_morty\Client\src\assets\img\universe.jpg');
   background-size: cover; 
-  background-attachment: fixed;  
-  height: 100vh;
+  background-attachment: fixed;
+  height: 100%;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+::-webkit-scrollbar{
+  width: 20px;
+}
+::-webkit-scrollbar-track{
+  background: #3d1441;
+}
+
+::-webkit-scrollbar-thumb{
+  background: #44fb08;
+}
+
+::-webkit-scrollbar-button{
+  background: #3d1441;
+}
+
+::-webkit-scrollbar-track-piece{
+  background: #f384fd;
 }
