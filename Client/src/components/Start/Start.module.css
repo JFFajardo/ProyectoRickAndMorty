@@ -5,30 +5,28 @@
   top: 50%;
   transform: translate(-50%,-50%);
   background-color: transparent;
-  padding: 10px 10px;
+  padding: 5px 5px;
   font-family: 'Get Schwifty';
   color:black ;
   text-shadow: 0 0 5px #44fb08;
   -webkit-text-fill-color: #0e0f0e;
   -webkit-text-stroke-color: #44fb08;
   -webkit-text-stroke-width:0.5px; 
-  font-size: 40px; 
-  margin-top: 60px;
+  font-size: 36px; 
+  margin-top: 20px;
   letter-spacing: 1px;
 }
 
 .button{
   position: relative;
   margin: 0 auto;
-  padding: 20px;
+  padding: 10px;
   width: 160px;
   border: 2.4px solid #44fb08;
   border-radius: 80px;
   background-color: #3d1441;
-  font-size:xx-large;
-  font-family: 'Get Schwifty';
   cursor: pointer;  
-  
+  text-decoration: none;
 }
 .dot {
   content: '';
@@ -50,7 +48,7 @@
   background: #3d1441;
   border-radius: 16px;
   border: 3.2px solid #44fb08 ;
-  box-shadow: 0 0 11.2px white,
+  box-shadow: 0 0 11.2px silver,
         0 0 2em #44fb08;
 }
 .button:hover{
@@ -87,8 +85,6 @@
 }
 
 .img{
-  position: absolute;
-  right: -75%;
-  top: -50%;
-  width: 500px;  
+  width: 400px;  
+  opacity: 90%;
 }

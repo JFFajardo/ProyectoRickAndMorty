@@ -39,3 +39,22 @@
     background-color: blueviolet;
     color: aqua
 }
+
+@media screen and (max-width: 1000px) {
+
+    .divSearch{
+        display: flex;
+        width: 50%;
+        background-color: transparent;
+    }
+    .div{
+        display: flex;
+        justify-content: center;
+    }
+
+    .button{        
+        font-size: 18px;        
+        width: 80px;             
+        margin: 5px;        
+    }
+}

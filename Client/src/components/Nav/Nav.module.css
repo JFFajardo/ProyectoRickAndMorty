@@ -30,3 +30,42 @@
     color: aqua;
     text-shadow: 0 0 5px #191a19;
 }
+
+@media screen and (max-width: 1000px) {
+
+    .navBar{
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+    }
+    .div{
+        display: flex;
+        justify-content: center;
+    }
+
+    .button{        
+        font-size: 18px;        
+        width: 100px;             
+        margin: 10px;        
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .navBar{
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        align-content: center;
+    }
+    .div{
+        display: flex;
+        justify-content: center;
+    }
+
+    .button{        
+        font-size: 16px;        
+        width: 70px;             
+        margin: 2px;        
+    }
+}

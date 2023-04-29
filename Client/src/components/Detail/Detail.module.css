@@ -43,7 +43,7 @@
   left: 3%;
   top: 3%;
   border-radius: 3px;
-  background-image: url('C:\Users\Windows\Desktop\SOYHENRY DOCS\ProyectoRyM\rick_and_morty\Client\src\assets\img\universe.jpg');
+  background-image: url(https://media.giphy.com/media/3ov9k1173PdfJWRsoE/giphy.gif);
   background-size: cover;
   background-position: center;  
   color: #44fb08;
@@ -96,12 +96,12 @@
 }
 
 .img {
-  display: flex;
-  width: 350px;
-  height: 350px; 
+  display: absolute;
+  width: 320px;
+  height: 320px; 
   border-color: #44fb08;
   border-style:inset;
-  border-radius: 175px;  
+  border-radius: 160px;  
   align-self: center;  
   opacity: 90%;
   margin-top: 40px;

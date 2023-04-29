@@ -1,9 +1,10 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url('C:\Users\Windows\Desktop\SOYHENRY DOCS\ProyectoRyM\rick_and_morty\Client\src\assets\img\universe.jpg');
-  background-size: cover; 
-  background-attachment: fixed;
+  background-image: url(https://media.giphy.com/media/3ov9k1173PdfJWRsoE/giphy.gif);
+  background-size: 100%;
+  background-position: center;
+  background-attachment:fixed;
   height: 100%;
 }
 

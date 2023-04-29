@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import validate from './validation'
 import styles from './Form.module.css'
-import rym from '../../assets/img/rym.jpg'
+import rym from '../../assets/img/rym3.png'
 
 export default function Form ({login}){
 
